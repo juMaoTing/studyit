@@ -33,7 +33,7 @@
     <?php include '/views/common/script.html' ?>
     <script>
         $(function(){
-            $('#formLogin').submit(function(e){
+            $('#formLogin').submit(function(){
                 var data=$(this).serialize();
                 $.ajax({
                     url:'/api/login',
